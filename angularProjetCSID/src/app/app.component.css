@@ -1,0 +1,9 @@
+#didi {
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+p{
+  background-color: #00DBDE;
+}
