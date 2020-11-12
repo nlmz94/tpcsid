@@ -1,0 +1,27 @@
+#body {
+  background-image: url("bg.png");
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+#title {
+  padding-top: 40vh;
+}
+#title h2 {
+  color: white;
+  text-align: center;
+}
+
+#all {
+  padding-top: 2vh;
+}
+
+#play {
+  margin-right: 10vw;
+}
+
+#play:hover{background-color: #097ce7;}
+#list:hover {background-color: #097ce7;}

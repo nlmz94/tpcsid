@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-choice',
@@ -6,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./choice.component.css']
 })
 export class ChoiceComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor(private router: Router) { }
+  ngOnInit(): void {}
+  onClickList(): void {this.router.navigate(['list']).then(); }
+  onClickPlay(): void {this.router.navigate(['playback']).then(); }
 }

@@ -1,1 +1,24 @@
-<p>choice works!</p>
+<body id="body">
+  <div class="container">
+
+    <div id="title" class="row justify-content-center"> <h2>Faites votre choix :</h2> </div>
+
+    <div id="all" class="row justify-content-center">
+  <div (click)="onClickPlay()" id="play" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://www.flaticon.com/svg/static/icons/svg/907/907856.svg">
+    <div class="card-body">
+      <p class="card-text">Commencez à regarder vos animés préferés dès maintenant.</p>
+    </div>
+  </div>
+
+  <div (click)="onClickList()" id="list" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://www.flaticon.com/svg/static/icons/svg/839/839986.svg">
+    <div class="card-body">
+      <p class="card-text">Rejoinez la communauté et échangez vos listes d'animés.</p>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</body>
+
