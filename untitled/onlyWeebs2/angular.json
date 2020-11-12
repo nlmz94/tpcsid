@@ -24,7 +24,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,10 +119,6 @@
           }
         }
       }
-    }
-  },
-  "defaultProject": "onlyWeebs2",
-  "cli": {
-    "analytics": "9026df6e-b1a3-4ebe-b592-8f658f1f3345"
-  }
+    }},
+  "defaultProject": "onlyWeebs2"
 }

@@ -1,7 +1,9 @@
 <body id="body">
 <div id="container">
   <div id="inviteContainer">
-    <div class="logoContainer"><img class="logo" src="https://seeklogo.com/images/D/discord-logo-134E148657-seeklogo.com.png"/><img class="text" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Discord_Color_Text_Logo.svg/2000px-Discord_Color_Text_Logo.svg.png"/></div>
+    <div class="logoContainer">
+      <img class="logo" src="https://media.discordapp.net/attachments/773831910694584320/773864361978626118/weebChan.png?width=543&height=649"/>
+      <img class="text" src="https://media.discordapp.net/attachments/773831910694584320/773864371129417768/only_weebs_2.png"/></div>
     <div class="acceptContainer">
       <form>
         <h1>WELCOME BACK!</h1>
@@ -15,7 +17,7 @@
             <input type="password" required=""/><a class="forgotPas" href="#">FORGOT YOUR PASSWORD?</a>
           </div>
           <div class="formDiv">
-            <button class="acceptBtn" type="submit">Login</button><span class="register">Need an account?<a href="#">Register</a></span>
+            <button (click)="onSignin()" class="acceptBtn" type="submit">Login</button><span class="register">Need an account?<a href="#">Register</a></span>
           </div>
         </div>
       </form>

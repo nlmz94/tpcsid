@@ -3,20 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SigninComponent } from './signin/signin.component';
-import { ChoiceComponent } from './choice/choice.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SigninComponent,
-    ChoiceComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
