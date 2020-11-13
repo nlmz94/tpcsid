@@ -9,11 +9,9 @@ public class GitRepository {
         this.name =name;
         this.owner = owner;
     }
-
     public String getName() {
         return this.name;
     }
-
     public String getOwner() {
         return this.owner;
     }
