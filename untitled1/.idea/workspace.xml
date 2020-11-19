@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="151368c1-5edd-44a7-99f4-d16d89133e6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/csid-web-repository-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/csid-web-repository-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/GitRepositoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/GitRepositoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../CSID-web-repository-base-main/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/signin/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/signin/onlyWeebs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/app/signin/weebChan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kEJoszDtPEU4Wi12ue4sj9R1qH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OnlyWeebs" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="151368c1-5edd-44a7-99f4-d16d89133e6c" name="Default Changelist" comment="" />
+      <created>1605259997141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605259997141</updated>
+      <workItem from="1605259998205" duration="15000" />
+      <workItem from="1605369969047" duration="92000" />
+      <workItem from="1605370138275" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="169" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605260012660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="169" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605260012660" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605370190094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605370190094" />
+  </component>
+</project>

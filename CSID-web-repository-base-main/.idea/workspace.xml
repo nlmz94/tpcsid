@@ -23,19 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f294d486-de4e-454e-8ab3-a2ccfd7cae5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/GitRepositoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot/.idea/springboot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_5_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csid-web-repository-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/csid-web-repository-base.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/CsidWebRepositoryBaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/CsidWebRepositoryBaseApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/GitRepositoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/GitRepositoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/domain/GitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/domain/GitRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/paris8univ/iut/csid/csidwebrepositorybase/core/dao/GitRepositoryEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/onlyWeebs2/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/onlyWeebs2/angular.json" afterDir="false" />
@@ -86,7 +81,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,6 +92,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -104,19 +100,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CsidWebRepositoryBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="csid-web-repository-base" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fr.paris8univ.iut.csid.csidwebrepositorybase.CsidWebRepositoryBaseApplication" />
@@ -136,7 +119,9 @@
       <workItem from="1605259830196" duration="206000" />
       <workItem from="1605260051236" duration="257000" />
       <workItem from="1605260322052" duration="79000" />
-      <workItem from="1605260413190" duration="10542000" />
+      <workItem from="1605260413190" duration="13539000" />
+      <workItem from="1605277192080" duration="870000" />
+      <workItem from="1605369890370" duration="63000" />
     </task>
     <servers />
   </component>
@@ -171,49 +156,56 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="247" y="128" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605260339510" />
-    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1605265239830">
+    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1605369953499">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605265239830" />
-    <state width="1879" height="319" key="GridCell.Tab.0.bottom" timestamp="1605272381219">
+    <state x="739" y="260" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605369953499" />
+    <state width="1879" height="319" key="GridCell.Tab.0.bottom" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.0.center" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.0.center" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.0.left" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.0.left" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.0.right" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.0.right" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.1.bottom" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.1.bottom" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.1.center" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.1.center" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.1.left" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.1.left" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state width="1879" height="319" key="GridCell.Tab.1.right" timestamp="1605272381219">
+    <state width="1879" height="319" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state width="1879" height="319" key="GridCell.Tab.1.right" timestamp="1605277178124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="319" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605272381219" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1605260393509">
+    <state width="1879" height="319" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605277178124" />
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1605276571126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="174" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605276571126" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1605369901142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605260393509" />
-    <state x="551" y="121" key="new project wizard" timestamp="1605264520594">
+    <state x="440" y="94" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605369901142" />
+    <state x="551" y="121" key="new project wizard" timestamp="1605369933666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="551" y="121" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605264520594" />
+    <state x="551" y="121" key="new project wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605369933666" />
   </component>
 </project>

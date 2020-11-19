@@ -7,9 +7,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value="/repositories",  method=RequestMethod.GET)
-public class GitRepositoryController { //private final GitRepositoryService repositoryService;
+public class GitRepositoryController {
+    private final GitRepositoryService repositoryService;
     private final List<GitRepository> repositories =  new ArrayList<>();
-    public GitRepositoryController(GitRepositoryService repoServ) { //this.repositoryService=repoServ;
+    public GitRepositoryController(GitRepositoryService repoServ) { //
+        this.repositoryService=repoServ;
         fillRepositories();
     }
 

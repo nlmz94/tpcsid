@@ -1,10 +1,10 @@
 package fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao;
 import javax.persistence.*;
-/*
+
 @Entity
-@Table(name = "repository") */
+@Table(name = "repository")
 class GitRepositoryEntity {
-    /*
+
     @Id
     @Column(name = "name", nullable = false)
     private String name;
@@ -26,5 +26,5 @@ class GitRepositoryEntity {
 
     public void setOwner(String owner) {
         this.owner = owner;
-    } */
+    }
 }
