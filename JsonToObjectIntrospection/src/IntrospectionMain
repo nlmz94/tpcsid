@@ -1,0 +1,100 @@
+package introspection2;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+
+public class IntrospectionMain {
+
+    public static void main(String[] args) throws Exception { new IntrospectionMain().run(); }
+
+    private void run() throws Exception {
+        Class<?> clss = Class.forName("IntrospectionMain$User");
+
+        System.out.println("Class:" + clss);
+
+        Field[] fields = clss.getDeclaredFields();
+
+        for(Field f : fields) {
+            System.out.println("Field " + f.getName() + " type: " + f.getType());
+        }
+
+        // Object obj = clss.newInstance();
+        Object obj = clss.getDeclaredConstructor().newInstance();
+        System.out.println("obj:" + obj);
+
+        Field firstNameField = clss.getDeclaredField("firstName");
+        firstNameField.set(obj, "Arnaud");
+        // equivalent of "obj.firstNameField = "Arnaud";
+
+        Object firstNameValueObj = firstNameField.get(obj);
+        System.out.println("firstName:" + firstNameValueObj);
+        // equivalent of "val = obj.firstNameField;
+
+
+
+        Field birthDateField = clss.getDeclaredField("birthDate");
+        birthDateField.set(obj, Integer.valueOf(1974));
+        // equivalent of "obj.birthDate = 1974;
+
+        Object birthDateObj = birthDateField.get(obj);
+        if (birthDateObj instanceof Integer) {
+            Integer intObj = (Integer) birthDateObj;
+            int birth = intObj.intValue();
+            System.out.println("birthDate:" + birth);
+            // equivalent of "val = obj.firstNameField;
+        }
+
+        MySuperAnnotation annotation = birthDateField.getAnnotation(MySuperAnnotation.class);
+        if (annotation != null) {
+            int precision = annotation.precision();
+            System.out.println("found @MySuperAnnotation(precision=" + precision + ") on field " + birthDateField);
+        }
+
+        Method greetingMethod = clss.getDeclaredMethod("greeting", new Class[] { String.class });
+        Object returnObj = greetingMethod.invoke(obj, "user");
+        System.out.println("returned => " + returnObj);
+
+        for(int i = 0; i < 1000; i++) {
+            greetingMethod.invoke(obj, "user");
+        }
+        greetingMethod.invoke(obj, "user");
+    }
+
+//	public static class FastMethodAccessor$1 implements jdk.internal.reflect.MethodAccessor {
+//		@Override
+//		public Object invoke(Object obj, Object[] args) {
+//			User thisObj = (User) obj;
+//			String res = thisObj.greeting((String) args[0]);
+//			return res;
+//		}
+//	}
+
+    @Retention(RetentionPolicy.RUNTIME)
+    public static @interface MySuperAnnotation {
+
+        int precision() default 1;
+    }
+
+    public static class User {
+        public String firstName;
+
+        @MySuperAnnotation( precision = 2)
+        public int birthDate;
+
+        public Integer birthDateWrapper;
+
+        public String greeting(String msg) {
+            String res = "Hello " + msg;
+            return res;
+        }
+
+        @Override
+        public String toString() {
+            return "User [firstName=" + firstName + ", birthDate=" + birthDate + ", birthDateWrapper="
+                    + birthDateWrapper + "]";
+        }
+
+
+    }
+}

@@ -1,0 +1,50 @@
+.navbar{
+  background-color: #212223;
+
+}
+
+.nav-item {
+  margin-right: 25px;
+}
+
+#searchGroup {
+}
+
+#searchInput {
+  height: 2vw;
+  width: 20vw;
+  background-color: dimgrey;
+  color: white;
+  box-shadow: none !important;
+  border-color: dimgrey;
+}
+
+#searchButton {
+  background-color: #097ce7;
+  border: #097ce7;
+  height: 2vw;
+  color: white;
+  border-right-style: solid;
+}
+
+#searchButton:hover {
+  background-color: #11428D;
+  border: #11428D;
+  border-right-style: solid;
+}
+
+#imgLoop {
+  display: block;
+  margin: auto;
+  height: 1vw;
+  -webkit-filter: invert(100%);
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+
+
+
