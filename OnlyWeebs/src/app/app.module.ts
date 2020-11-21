@@ -7,9 +7,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SigninComponent } from './signin/signin.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { PlaybackComponent } from './playback/playback.component';
-import { ListComponent } from './list/list.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
+import { AnimeComponent } from './anime/anime.component';
+import { ListsComponent } from './lists/lists.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,11 @@ import { NavComponent } from './nav/nav.component';
     SigninComponent,
     ChoiceComponent,
     PlaybackComponent,
-    ListComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    AnimeComponent,
+    ListsComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,

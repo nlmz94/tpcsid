@@ -9,6 +9,6 @@ import {Router} from '@angular/router';
 export class ChoiceComponent implements OnInit {
   constructor(private router: Router) { }
   ngOnInit(): void {}
-  onClickList(): void {this.router.navigate(['list']).then(); }
+  onClickList(): void {this.router.navigate(['lists']).then(); }
   onClickPlay(): void {this.router.navigate(['playback']).then(); }
 }
