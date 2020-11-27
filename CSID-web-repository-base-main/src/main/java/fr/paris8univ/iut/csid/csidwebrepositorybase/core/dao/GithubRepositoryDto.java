@@ -1,14 +1,38 @@
-package fr.paris8univ.iut.csid.csidwebrepositorybase.core;
+package fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-public class GitRepositoryDto {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class GithubRepositoryDto {
+    private String id;
+    private String owner;
+
+    public GithubRepositoryDto() {}
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    /*
     private String name;
     private String owner;
     private Integer issues;
     private Integer forks;
 
-    public GitRepositoryDto() {}
+    public GithubRepositoryDto() {}
 
-    public GitRepositoryDto(String name, String owner, Integer issues, Integer forks) {
+    public GithubRepositoryDto(String name, String owner, Integer issues, Integer forks) {
         this.name=name;
         this.owner=owner;
         this.issues=issues;
@@ -31,4 +55,5 @@ public class GitRepositoryDto {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+    */
 }

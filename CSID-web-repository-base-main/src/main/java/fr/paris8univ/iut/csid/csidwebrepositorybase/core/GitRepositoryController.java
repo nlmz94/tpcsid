@@ -1,5 +1,7 @@
 package fr.paris8univ.iut.csid.csidwebrepositorybase.core;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao.GithubRepositoryDto;
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GitRepository;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GithubRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,11 +30,13 @@ public class GitRepositoryController {
     }
 
     @GetMapping("/{name}")
-    public ResponseEntity<GitRepository> getOneRepository(@PathVariable String name){
-        return repositoryService.getOneRepository(name).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    public GitRepository getOneRepository(@PathVariable String name) throws URISyntaxException {
+        return this.repositoryService.getOneRepository(name).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build()).getBody();
+        //return repositoryService.getOneRepository(name).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/add")
+
+    @PostMapping
     public ResponseEntity<GitRepository> createOneRepository(@RequestBody GitRepository gitRepo) throws URISyntaxException {
         repositoryService.createOneRepository(gitRepo);
         URI location = new URI("/repositories/add/"+gitRepo.getName());
@@ -47,13 +51,13 @@ public class GitRepositoryController {
     }
 
     @PutMapping("/{name}")
-    public ResponseEntity<GitRepository> putOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) {
+    public ResponseEntity<GitRepository> putOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) throws URISyntaxException {
         repositoryService.putOneRepository(name, gitRepo);
         return ResponseEntity.noContent().build();
     }
 
     @PatchMapping("/{name}")
-    public ResponseEntity<GitRepository> patchOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) {
+    public ResponseEntity<GitRepository> patchOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) throws URISyntaxException {
         repositoryService.patchOneRepository(name, gitRepo);
         return ResponseEntity.noContent().build();
     }

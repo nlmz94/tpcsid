@@ -1,9 +1,10 @@
 package fr.paris8univ.iut.csid.csidwebrepositorybase.core;
-import fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao.GitRepositoryDao;
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao.GitRepositoryEntity;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao.GithubRepositoryDto;
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GitRepository;
 import org.springframework.stereotype.Service;
 
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -11,38 +12,39 @@ import java.util.stream.Collectors;
 @Service
 public class GitRepositoryService {
 
-    private final GitRepositoryDao gitRepositoryDao;
+    private final GitRepositoryRepository gitRepositoryRepository;
 
-    public GitRepositoryService(GitRepositoryDao gitRepositoryDao) {
-        this.gitRepositoryDao = gitRepositoryDao;
+    public GitRepositoryService(GitRepositoryRepository gitRepositoryRepository) {
+        this.gitRepositoryRepository = gitRepositoryRepository;
     }
 
+    public Optional<GitRepository> getOneRepository(String name) throws URISyntaxException {
+        return gitRepositoryRepository.findById(name);
+    }
+
+
     public List<GitRepository> getRepositories() {
-        List<GitRepositoryEntity> repositories = gitRepositoryDao.findAll();
+        List<GitRepositoryEntity> repositories = gitRepositoryRepository.findAll();
         return repositories.stream().map(x -> new GitRepository(x.getName(), x.getOwner(), x.getIssues(), x.getForks())).collect(Collectors.toList());
     }
 
-    public Optional<GitRepository> getOneRepository(String name){
-        return gitRepositoryDao.findById(name).map(x-> new GitRepository(x.getName(),x.getOwner(), x.getIssues(), x.getForks()));
-    }
-
     public void createOneRepository(GitRepository gitRepo){
-        gitRepositoryDao.save(new GitRepositoryEntity(gitRepo.getName(), gitRepo.getOwner(), gitRepo.getIssues(), gitRepo.getForks()));
+        gitRepositoryRepository.save(new GitRepositoryEntity(gitRepo.getName(), gitRepo.getOwner(), gitRepo.getIssues(), gitRepo.getForks()));
     }
 
     public void deleteOneRepository(String name) {
-        gitRepositoryDao.deleteById(name);
+        gitRepositoryRepository.deleteById(name);
     }
 
-    public void putOneRepository(String name, GitRepository gitRepo) {
-        if (gitRepositoryDao.findById(name).isPresent())
+    public void putOneRepository(String name, GitRepository gitRepo) throws URISyntaxException {
+        if (gitRepositoryRepository.findById(name).isPresent())
             this.deleteOneRepository(name);
         this.createOneRepository(gitRepo);
     }
 
-    public void patchOneRepository(String name, GitRepository gitRepo) {
+    public void patchOneRepository(String name, GitRepository gitRepo) throws URISyntaxException {
         GitRepository newRepo = new GitRepository("placeholder", "placeholder", 270, 270);
-        GitRepositoryEntity originalRepoEntity = gitRepositoryDao.getOne(name);
+        GitRepositoryEntity originalRepoEntity = gitRepositoryRepository.getOne(name);
 
         newRepo.setName(originalRepoEntity.getName());
         newRepo.setOwner(originalRepoEntity.getOwner());

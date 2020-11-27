@@ -4,8 +4,4 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-
-
-public interface GitRepositoryDao extends JpaRepository<GitRepositoryEntity, String> {
-    List<GitRepositoryEntity> findAll();
-}
+public interface GitRepositoryDao extends JpaRepository<GitRepositoryEntity, String> { }
