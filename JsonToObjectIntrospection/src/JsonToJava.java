@@ -18,16 +18,14 @@ public class JsonToJava {
 
             if (tmpArray[1].chars().allMatch(Character::isDigit))  //Case 1 : Int
                  return Integer.parseInt(tmpArray[1]);
-            else  //Case 2 : String
+            else    //Case 2 : String
                 return tmpArray[1];
-        } else{ //Case 3 : Human
+        } else {    //Case 3 : Human
             String tmpString1 = array[0];
             String tmpString2 = array[1];
             String firstname, lastname;
-            tmpString1 = tmpString1.replace("\"", "");
-            tmpString2 = tmpString2.replace("\"", "");
-            firstname = tmpString1.split(":")[1];
-            lastname = tmpString2.split(":")[1];
+            firstname =  tmpString1.replace("\"", "").split(":")[1];
+            lastname =  tmpString2.replace("\"", "").split(":")[1];
             return new Human(firstname, lastname);
         }
     }

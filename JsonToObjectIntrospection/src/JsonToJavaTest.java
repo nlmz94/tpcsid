@@ -28,7 +28,7 @@ public class JsonToJavaTest {
     }
 
     @Test
-    public void testDumpObjJsonToInt() throws IOException {
+    public void testDumpObjJsonToObject() throws IOException {
         File f = new File("C:\\Users\\naelm\\Documents\\GitHub\\tpcsid\\JsonToObjectIntrospection\\src\\file.json");
         Object obj = jsonToJava.dumpJsonToObject(f);
         Human nael = new Human("Nael", "Mezdari");
