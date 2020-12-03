@@ -12,6 +12,7 @@ import { NavComponent } from './nav/nav.component';
 import { AnimeComponent } from './anime/anime.component';
 import { ListsComponent } from './lists/lists.component';
 import { HelpComponent } from './help/help.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HelpComponent } from './help/help.component';
     NavComponent,
     AnimeComponent,
     ListsComponent,
-    HelpComponent
+    HelpComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,29 @@
 #body {
   background-image: url("https://media.discordapp.net/attachments/554665071587098627/779357661740793866/thumb-1920-656029.png?width=1204&height=677");
+  height: 100%;
+  width: 100%;
 }
 
-table {
-  color: white;
-  background-color: dimgrey;
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#title {
+  color: red;
+}
+
+#lorem {
+  color: #097ce7 ;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
