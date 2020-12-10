@@ -1,7 +1,6 @@
 package fr.paris8univ.iut.csid.csidwebrepositorybase.core;
-import fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao.GithubRepositoryDto;
+
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GitRepository;
-import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GithubRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,11 +9,11 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 /*
-* psql -h localhost -d springdb -U root -p 5432
-* */
+ * psql -h localhost -d springdb -U root -p 5432
+ * */
 
 @RestController
-@RequestMapping(value="/repositories")
+@RequestMapping(value = "/repositories")
 public class GitRepositoryController {
 
     private final GitRepositoryService repositoryService;
@@ -31,22 +30,21 @@ public class GitRepositoryController {
 
     @GetMapping("/{name}")
     public GitRepository getOneRepository(@PathVariable String name) throws URISyntaxException {
-        return this.repositoryService.getOneRepository(name).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build()).getBody();
-        //return repositoryService.getOneRepository(name).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+        return this.repositoryService.getOneRepositoryGithub(name).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build()).getBody();
     }
 
 
     @PostMapping
     public ResponseEntity<GitRepository> createOneRepository(@RequestBody GitRepository gitRepo) throws URISyntaxException {
         repositoryService.createOneRepository(gitRepo);
-        URI location = new URI("/repositories/add/"+gitRepo.getName());
+        URI location = new URI("/repositories/add/" + gitRepo.getName());
         return ResponseEntity.created(location).build();
     }
 
     @DeleteMapping("/{name}")
     public ResponseEntity<GitRepository> deleteOneRepository(@PathVariable String name) throws URISyntaxException {
         repositoryService.deleteOneRepository(name);
-        URI location = new URI("/repositories/delete/"+name);
+        URI location = new URI("/repositories/delete/" + name);
         return ResponseEntity.created(location).build();
     }
 

@@ -4,13 +4,35 @@
   width: 100%;
 }
 
+.jumbotron{
+  background-color:#097ce7 !important;
+}
+
+#row1 {
+  margin: auto;
+}
+
+#news1 {
+  background-color: #A5A5A5;
+}
+
+#news2 {
+  background-color: #A5A5A5;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+#news3 {
+  background-color: #A5A5A5;
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 2.5rem; /* Footer height */
 }
 
 #title {
@@ -18,7 +40,7 @@
 }
 
 #lorem {
-  color: #097ce7 ;
+  color: #097ce7;
 }
 
 #footer {

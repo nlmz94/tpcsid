@@ -3,57 +3,43 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GithubRepositoryDto {
-    private String id;
-    private String owner;
-
-    public GithubRepositoryDto() {}
-
-    public String getOwner() {
-        return owner;
-    }
-
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    /*
     private String name;
-    private String owner;
-    private Integer issues;
+    private String login;
+    private Integer open_issues;
     private Integer forks;
 
     public GithubRepositoryDto() {}
 
-    public GithubRepositoryDto(String name, String owner, Integer issues, Integer forks) {
-        this.name=name;
-        this.owner=owner;
-        this.issues=issues;
-        this.forks=forks;
+    public Integer getOpen_issues() {
+        return open_issues;
     }
 
-    public Integer getIssues() { return issues; }
-    public void setIssues(Integer issues) { this.issues = issues; }
-    public Integer getForks() { return forks; }
-    public void setForks(Integer forks) { this.forks = forks; }
+    public void setOpen_issues(Integer open_issues) {
+        this.open_issues = open_issues;
+    }
+
+    public Integer getForks() {
+        return forks;
+    }
+
+    public void setForks(Integer forks) {
+        this.forks = forks;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public String getOwner() {
-        return owner;
-    }
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
-    */
+
 }

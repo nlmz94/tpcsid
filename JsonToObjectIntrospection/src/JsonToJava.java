@@ -34,7 +34,7 @@ public class JsonToJava {
         return new String(Files.readAllBytes(Paths.get(jsonFile.getPath())));
     }
 
-    public String[] stringToArray(String values) throws IOException {
+    public String[] stringToArray(String values) {
         String val = values;
         String[] array = new String[1];
         if (val.length()==0) {
