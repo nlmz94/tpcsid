@@ -1,0 +1,94 @@
+<div id="container" class="container">
+  <form class="form-horizontal" id="box" role="form">
+    <h2>Registration</h2>
+    <div class="form-group">
+      <label for="firstName" class="col-sm-5 control-label">First Name</label>
+      <div class="col-sm-12">
+        <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lastName" class="col-sm-5 control-label">Last Name</label>
+      <div class="col-sm-12">
+        <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-5 control-label">Email *</label>
+      <div class="col-sm-12">
+        <input type="email" id="email" placeholder="Email" class="form-control" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-5 control-label">Password *</label>
+      <div class="col-sm-12">
+        <input type="password" id="password" placeholder="Password" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-5 control-label">Confirm Password *</label>
+      <div class="col-sm-12">
+        <input type="password" id="password" placeholder="Confirm your Password" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="birthDate" class="col-sm-5 control-label">Date of Birth *</label>
+      <div class="col-sm-12">
+        <input type="date" id="birthDate" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber" class="col-sm-5 control-label">Phone number</label>
+      <div class="col-sm-12">
+        <input type="tel" id="phoneNumber" placeholder="Phone number" class="form-control" pattern="[0-9]{10}">
+        <span class="help-block" id="disclaimerPhone">Your phone number won't be disclosed anywhere </span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-5">Gender</label>
+      <div id="divGender">
+        <div class="row radio-group">
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" id="femaleRadio" value="Female"> Female
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" id="maleRadio" value="Male"> Male
+            </label>
+          </div>
+          <div class="col-sm-3">
+            <label class="radio-inline">
+              <input type="radio" id="otherRadio" value="Other"> Other
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-9 col-sm-offset-3">
+        <span class="help-block" id="reqFields">* = Required fields</span>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" (click)="onSignin()">Register</button>
+  </form>
+</div>
+
+
+<!--<script>
+  $(function () {
+    $.validator.setDefaults({
+      highlight: function (element) {$(element).closest('.form-group').addClass('has-error')},
+      unhighlight: function (element) {$(element).closest('.form-group').removeClass('has-error')}
+    });
+
+    $.validate({
+      rules: { password: "required", birthDate: "required", email: { required: true, email: true }},
+      messages: { email: {required: true, email: true}},
+      password: { required: " Please enter password" },
+      birthDate: { required: " Please enter birthdate" },
+      email: { required: ' Please enter email', email: ' Please enter valid email' },
+    })
+  })
+</script> -->

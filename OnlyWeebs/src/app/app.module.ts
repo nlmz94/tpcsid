@@ -13,6 +13,7 @@ import { AnimeComponent } from './anime/anime.component';
 import { ListsComponent } from './lists/lists.component';
 import { HelpComponent } from './help/help.component';
 import { FooterComponent } from './footer/footer.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     AnimeComponent,
     ListsComponent,
     HelpComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
