@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "702991b3-0f7a-4ad1-ab22-67e70dce58aa",
+		"name": "allrepositories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL REPOSITORIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repositories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GITHUB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repositories/tpspring",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"tpspring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GITHUB STATS ISSUES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repositories/tpspring/stats?type=issues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"tpspring",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "issues"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GITHUB STATS FORKS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/repositories/tpspring/stats?type=forks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"tpspring",
+						"stats"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "forks"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST A REPOSITORY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"tpspring\",\n    \"owner\": \"nlmz\",\n    \"issues\": 3,\n    \"forks\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ONE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT ONE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"romain\",\n    \"owner\": \"bigstudent\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/put/romain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"put",
+						"romain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH ONE",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"geoffrey\",\n        \"owner\": \"professorgroffffff\",\n        \"issues\": 25111,\n        \"pullRequest\": 200011\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/repositories/patch/romain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"repositories",
+						"patch",
+						"romain"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

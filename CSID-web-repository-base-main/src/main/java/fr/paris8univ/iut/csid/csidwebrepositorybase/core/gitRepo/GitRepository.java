@@ -1,4 +1,4 @@
-package fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain;
+package fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo;
 
 public class GitRepository {
 

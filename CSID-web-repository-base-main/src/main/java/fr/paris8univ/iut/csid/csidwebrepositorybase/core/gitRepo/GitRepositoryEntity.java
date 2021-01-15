@@ -1,4 +1,4 @@
-package fr.paris8univ.iut.csid.csidwebrepositorybase.core.dao;
+package fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo;
 import javax.persistence.*;
 
 @Entity

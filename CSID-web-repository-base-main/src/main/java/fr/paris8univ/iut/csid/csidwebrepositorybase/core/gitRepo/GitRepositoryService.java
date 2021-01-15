@@ -1,6 +1,6 @@
-package fr.paris8univ.iut.csid.csidwebrepositorybase.core;
+package fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo;
 
-import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GitRepository;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.Issue.GithubIssue;
 import org.springframework.stereotype.Service;
 
 import java.net.URISyntaxException;
@@ -38,5 +38,9 @@ public class GitRepositoryService {
 
     public void patchOneRepository(String name, GitRepository gitRepo) {
         this.gitRepositoryRepository.patchOneRepository(name, gitRepo);
+    }
+
+    public GithubIssue postOneIssue(String title) {
+        return gitRepositoryRepository.postOneIssue(title);
     }
 }

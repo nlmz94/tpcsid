@@ -1,6 +1,8 @@
-package fr.paris8univ.iut.csid.csidwebrepositorybase.core;
+package fr.paris8univ.iut.csid.csidwebrepositorybase.core.Controller;
 
-import fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain.GitRepository;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.Issue.GithubIssue;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo.GitRepository;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo.GitRepositoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,9 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
-/*
- * psql -h localhost -d springdb -U root -p 5432
- * */
+
+/* psql -h localhost -d springdb -U root -p 5432 */
 
 @RestController
 @RequestMapping(value = "/repositories")
@@ -58,5 +59,15 @@ public class GitRepositoryController {
     public ResponseEntity<GitRepository> patchOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) throws URISyntaxException {
         repositoryService.patchOneRepository(name, gitRepo);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/postIssue/{title}")
+    public void postOneIssue(@PathVariable String title) {
+        GithubIssue githubIssue = repositoryService.postOneIssue(title);
+        System.out.println(githubIssue.getId());
+        System.out.println(githubIssue.getBody());
+        System.out.println(githubIssue.getHtml_url());
+        System.out.println((githubIssue.getNumber()));
+        System.out.println((githubIssue.getState()));
     }
 }
