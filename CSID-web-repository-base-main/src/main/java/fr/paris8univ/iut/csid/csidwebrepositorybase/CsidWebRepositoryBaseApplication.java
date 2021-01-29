@@ -1,4 +1,5 @@
 package fr.paris8univ.iut.csid.csidwebrepositorybase;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

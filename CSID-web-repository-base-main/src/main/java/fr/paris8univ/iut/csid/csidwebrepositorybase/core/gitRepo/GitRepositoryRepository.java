@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 import java.net.URISyntaxException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -53,7 +52,7 @@ public class GitRepositoryRepository {
     }
 
     public void createOneRepository(GitRepository gitRepo) {
-        this.save(new GitRepositoryEntity(gitRepo.getName(), gitRepo.getOwner(), gitRepo.getIssues(), gitRepo.getForks()));
+        this.gitRepositoryDao.save(new GitRepositoryEntity(gitRepo.getName(), gitRepo.getOwner(), gitRepo.getIssues(), gitRepo.getForks()));
     }
 
     public void deleteOneRepository(String name) {
@@ -101,29 +100,23 @@ public class GitRepositoryRepository {
         return repositories.stream().map(x -> new GitRepository(x.getName(), x.getOwner(), x.getIssues(), x.getForks())).collect(Collectors.toList());
     }
 
-    public GithubIssue postOneIssue(String title) {
-        Issue is = new Issue();
-        is.setTitle(title);
-        is.setBody("body69420");
-        return githubRepositoryDao.getReturnValFromGithub(is);
+    public GithubIssue postOneIssue(Issue issue, String repository) {
+        GitRepositoryEntity owner = new GitRepositoryEntity();
+        if (gitRepositoryDao.findById(repository).isPresent()) {
+            owner = gitRepositoryDao.findById(repository).get();
+        }
+        return githubRepositoryDao.getReturnValFromGithub(issue, owner.getOwner(), repository);
     }
 
-    public String getDate(){ return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(LocalDateTime.now()); }
-    public LocalDateTime stringToLocalDateTime(String stringDate){ return LocalDateTime.parse(stringDate, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")); }
-    public int compareDates(LocalDateTime then, LocalDateTime now){ return Math.toIntExact(ChronoUnit.MINUTES.between(then,now)); }
-    public <S extends GitRepositoryEntity> S save(S s) {
-        return this.gitRepositoryDao.save(s);
+    public String getDate() {
+        return DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(LocalDateTime.now());
     }
-    public List<GitRepositoryEntity> findAll() {
-        return this.gitRepositoryDao.findAll();
-    }
+
     public void deleteById(String s) {
         this.gitRepositoryDao.deleteById(s);
     }
+
     public GitRepositoryEntity getOne(String s) {
         return this.gitRepositoryDao.getOne(s);
     }
-
-
 }
-

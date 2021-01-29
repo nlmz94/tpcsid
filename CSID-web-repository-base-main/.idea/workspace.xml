@@ -3,26 +3,8 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f294d486-de4e-454e-8ab3-a2ccfd7cae5a" name="Default Changelist" comment="" />
+    <list default="true" id="339f056c-05f2-4871-82cb-e6ae88a7ad68" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,25 +17,19 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="ProjectId" id="1kEJTfLVAphTW75PMmtJegOv1Yu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1n6zTZWfcFQ14dkgcKmU3gi1mYv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -64,16 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core.domain" />
-      <recent name="fr.paris8univ.iut.csid.csidwebrepositorybase.core" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RunManager">
     <configuration name="CsidWebRepositoryBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -87,48 +54,23 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f294d486-de4e-454e-8ab3-a2ccfd7cae5a" name="Default Changelist" comment="" />
-      <created>1605259828853</created>
+      <changelist id="339f056c-05f2-4871-82cb-e6ae88a7ad68" name="Default Changelist" comment="" />
+      <created>1610725336403</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605259828853</updated>
-      <workItem from="1605259830196" duration="206000" />
-      <workItem from="1605260051236" duration="257000" />
-      <workItem from="1605260322052" duration="79000" />
-      <workItem from="1605260413190" duration="10542000" />
-      <workItem from="1605273557432" duration="670000" />
-      <workItem from="1605279509800" duration="1116000" />
-      <workItem from="1605281442016" duration="1178000" />
-      <workItem from="1605429618711" duration="149000" />
-      <workItem from="1605435504308" duration="229000" />
-      <workItem from="1605525021363" duration="7000" />
-      <workItem from="1605614971863" duration="95000" />
-      <workItem from="1606461850434" duration="62000" />
-      <workItem from="1606461928784" duration="766000" />
-      <workItem from="1606462719905" duration="7770000" />
-      <workItem from="1606470527677" duration="18584000" />
-      <workItem from="1606571148278" duration="3634000" />
-      <workItem from="1606827922276" duration="599000" />
-      <workItem from="1607624496696" duration="1818000" />
+      <updated>1610725336403</updated>
+      <workItem from="1610725337663" duration="1607000" />
+      <workItem from="1611907752476" duration="1021000" />
+      <workItem from="1611908803054" duration="6186000" />
+      <workItem from="1611923369265" duration="1095000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

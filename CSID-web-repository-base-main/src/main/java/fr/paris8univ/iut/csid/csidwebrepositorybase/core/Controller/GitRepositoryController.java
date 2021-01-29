@@ -1,6 +1,7 @@
 package fr.paris8univ.iut.csid.csidwebrepositorybase.core.Controller;
 
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.Issue.GithubIssue;
+import fr.paris8univ.iut.csid.csidwebrepositorybase.core.Issue.Issue;
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo.GitRepository;
 import fr.paris8univ.iut.csid.csidwebrepositorybase.core.gitRepo.GitRepositoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,24 +51,19 @@ public class GitRepositoryController {
     }
 
     @PutMapping("/{name}")
-    public ResponseEntity<GitRepository> putOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) throws URISyntaxException {
+    public ResponseEntity<GitRepository> putOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) {
         repositoryService.putOneRepository(name, gitRepo);
         return ResponseEntity.noContent().build();
     }
 
     @PatchMapping("/{name}")
-    public ResponseEntity<GitRepository> patchOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) throws URISyntaxException {
+    public ResponseEntity<GitRepository> patchOneRepository(@PathVariable String name, @RequestBody GitRepository gitRepo) {
         repositoryService.patchOneRepository(name, gitRepo);
         return ResponseEntity.noContent().build();
     }
 
-    @PostMapping("/postIssue/{title}")
-    public void postOneIssue(@PathVariable String title) {
-        GithubIssue githubIssue = repositoryService.postOneIssue(title);
-        System.out.println(githubIssue.getId());
-        System.out.println(githubIssue.getBody());
-        System.out.println(githubIssue.getHtml_url());
-        System.out.println((githubIssue.getNumber()));
-        System.out.println((githubIssue.getState()));
+    @PostMapping("/{repository}/issues")
+    public GithubIssue postOneIssue(@PathVariable String repository, @RequestBody Issue issue) {
+        return repositoryService.postOneIssue(issue, repository);
     }
 }
