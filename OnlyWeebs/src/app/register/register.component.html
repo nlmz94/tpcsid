@@ -1,46 +1,46 @@
 <div id="container" class="container">
-  <form class="form-horizontal" id="box" role="form">
+  <form class="form-horizontal" id="box" role="form" autocomplete="off">
     <h2>Registration</h2>
     <div class="form-group">
       <label for="firstName" class="col-sm-5 control-label">First Name</label>
       <div class="col-sm-12">
-        <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+        <input type="text" id="firstName" placeholder="First Name" class="form-control owinput" autofocus>
       </div>
     </div>
     <div class="form-group">
       <label for="lastName" class="col-sm-5 control-label">Last Name</label>
       <div class="col-sm-12">
-        <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+        <input type="text" id="lastName" placeholder="Last Name" class="form-control owinput" autofocus>
       </div>
     </div>
     <div class="form-group">
       <label for="email" class="col-sm-5 control-label">Email *</label>
       <div class="col-sm-12">
-        <input type="email" id="email" placeholder="Email" class="form-control" name="email">
+        <input type="email" id="email" placeholder="Email" class="form-control owinput" name="email">
       </div>
     </div>
     <div class="form-group">
       <label for="password" class="col-sm-5 control-label">Password *</label>
       <div class="col-sm-12">
-        <input type="password" id="password" placeholder="Password" class="form-control">
+        <input type="password" id="password" placeholder="Password" class="form-control owinput">
       </div>
     </div>
     <div class="form-group">
       <label for="password" class="col-sm-5 control-label">Confirm Password *</label>
       <div class="col-sm-12">
-        <input type="password" id="password" placeholder="Confirm your Password" class="form-control">
+        <input type="password" id="password" placeholder="Confirm your Password" class="form-control owinput">
       </div>
     </div>
     <div class="form-group">
       <label for="birthDate" class="col-sm-5 control-label">Date of Birth *</label>
       <div class="col-sm-12">
-        <input type="date" id="birthDate" class="form-control">
+        <input type="date" id="birthDate" class="form-control owinput">
       </div>
     </div>
     <div class="form-group">
       <label for="phoneNumber" class="col-sm-5 control-label">Phone number</label>
       <div class="col-sm-12">
-        <input type="tel" id="phoneNumber" placeholder="Phone number" class="form-control" pattern="[0-9]{10}">
+        <input type="tel" id="phoneNumber" placeholder="Phone number" class="form-control owinput" pattern="[0-9]{10}">
         <span class="help-block" id="disclaimerPhone">Your phone number won't be disclosed anywhere </span>
       </div>
     </div>
@@ -50,17 +50,17 @@
         <div class="row radio-group">
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" id="femaleRadio" value="Female"> Female
+              <input type="radio" id="femaleRadio" value="Female" name="gender"> Female
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" id="maleRadio" value="Male"> Male
+              <input type="radio" id="maleRadio" value="Male" name="gender"> Male
             </label>
           </div>
           <div class="col-sm-3">
             <label class="radio-inline">
-              <input type="radio" id="otherRadio" value="Other"> Other
+              <input type="radio" id="otherRadio" value="Other" name="gender"> Other
             </label>
           </div>
         </div>
