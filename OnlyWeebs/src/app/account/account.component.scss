@@ -1,0 +1,58 @@
+#profile {
+    padding-top: 3vh;
+    background-color: rgba(40, 43, 48, .75);
+    color: #e3e3e3;
+}
+
+.profile-pic {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+    & img {
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    & a {
+        border-radius: 50%;
+        color: transparent;
+        transition: all .3s ease;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 10000;
+            color: rgba(250, 250, 250, 1);
+            transition: all .3s ease;
+        }
+
+        & span {
+            position: absolute;
+            display: inline-flex;
+            margin-top: 60px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+#profile-right {
+}
+
+#profile-name {
+}
+
+#profile-text {
+}
