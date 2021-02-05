@@ -1,10 +1,9 @@
 /* global styles */
 * {
-  font-family: 'Karla', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 body {
-  background-image: url("bghome.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: transparent;
+    background-size: cover;
 }

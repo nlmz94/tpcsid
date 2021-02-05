@@ -1,5 +1,4 @@
 #body {
-    background-image: url("https://media.discordapp.net/attachments/554665071587098627/779357661740793866/thumb-1920-656029.png?width=1204&height=677");
     min-height: 100%;
     height: 100%;
     width: 100%;
@@ -38,11 +37,4 @@
 
 #firstRow {
     padding-top: 1.5vh;
-}
-
-footer {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
 }

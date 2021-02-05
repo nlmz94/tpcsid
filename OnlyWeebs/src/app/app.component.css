@@ -1,0 +1,15 @@
+#router {
+    background-image: url("https://media.discordapp.net/attachments/554665071587098627/779357661740793866/thumb-1920-656029.png");
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
